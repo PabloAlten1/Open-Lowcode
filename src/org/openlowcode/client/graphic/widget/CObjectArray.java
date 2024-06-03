@@ -97,6 +97,7 @@ public class CObjectArray
 	private boolean inline;
 	private boolean inputdata;
 	private boolean allowdataclear;
+	private boolean allowselectalldata;
 	private ArrayList<CBusinessField<?>> payloadlist;
 	private CPageDataRef datareference;
 	private TableView<ObjectTableRow> thistable;
@@ -645,6 +646,8 @@ public class CObjectArray
 			clearall = new MenuItem("Clear all");
 			clearselected = new MenuItem("Clear selected");
 		}
+
+		selectall = new MenuItem("Select All");
 
 		contextmenu.getItems().add(startupdate);
 		contextmenu.getItems().add(commitupdate);
